@@ -31,7 +31,7 @@ jobs:
         run: pyinstaller --onefile --hidden-import=pyvisa --hidden-import=pyvisa-py N5181A.py
 
       - name: Upload EXE artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: N5181A-exe
           path: dist/N5181A.exe
